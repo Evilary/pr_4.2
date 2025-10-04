@@ -5,46 +5,34 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Constructions_Chenyshkov2.Elements"
              mc:Ignorable="d" >
-    
+
     <Grid Height="50" Margin="0,0,0,10" Background="#35363A">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="50*"/>
+            <ColumnDefinition Width="50"/>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <Grid.Effect>
-            <DropShadowEffect
-                Color="Black" 
-                Direction="315"
-                Opacity="0.7"
-                RenderingBias="Performance"
-                BlurRadius="5"/>
-        </Grid.Effect>
-        
-        <Image Height="30" Width="30" VerticalAlignment="Top" HorizontalAlignment="Left" Stretch="UniformToFill" Margin="10" Source="/Images/ic_user.png"/>
-        <Label x:Name="tbf10"
-               Content=""
-               VerticalContentAlignment="Center"
-               Margin="10"
-               Grid.Column="1"
-               Foreground="white"
-               FontSize="14"/>
-        <Label x:Name="tbfSchoolarship"
-               Content=""
-               VerticalContentAlignment="Center"
-               Margin="10"
-               Grid.Column="2"
-               Foreground="white"
-               FontSize="14"/>
-        <Label x:Name="tbfCourse"
-               Content=""
-               VerticalContentAlignment="Center"
-               Margin="10"
-               Grid.Column="3"
-               Foreground="white"
-               FontSize="14"/>
+        <Image Height="30" VerticalAlignment="Top" Margin="10,10,0,0" 
+               HorizontalAlignment="Left" Width="30" Stretch="UniformToFill" 
+               Source="C:\Users\student-a502\Downloads\Constructions_Chenyshkov2\Images/ic_user.png"/>
 
+        <Label x:Name="tb_fio" Content="Фамилия Имя Отчество" 
+               VerticalContentAlignment="Center" Margin="9.4,10,10.2,10" 
+               Grid.Column="1" Foreground="White" FontSize="14"/>
+
+        <Label x:Name="tb_scholarship" Content="Степендия: получает" 
+               VerticalContentAlignment="Center" Margin="9.8,10" 
+               Grid.Column="2" Foreground="White" FontSize="14"/>
+
+        <Label x:Name="tb_course" Content="Курс: 4" 
+               VerticalContentAlignment="Center" Margin="9.2,10,9.6,10" 
+               Grid.Column="3" Foreground="White" FontSize="14"/>
+
+        <Grid.Effect>
+            <DropShadowEffect Color="Black" Direction="315" Opacity="0.7" 
+                             RenderingBias="Performance" BlurRadius="5"/>
+        </Grid.Effect>
     </Grid>
 </UserControl>
